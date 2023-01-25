@@ -2,7 +2,6 @@ import random
 import importlib
 from commands import assistantvoice
 
-
 commandslist = ["endprogram", "flip", "joke", "roll", "settimer", "time", "add", "subtract", "multiply", "divide"]
 
 #other variables
