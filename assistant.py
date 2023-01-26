@@ -2,7 +2,7 @@ import random
 import importlib
 from commands import assistantvoice
 
-commandslist = ["endprogram", "flip", "joke", "roll", "settimer", "time", "add", "subtract", "multiply", "divide"]
+commandslist = ["endprogram", "flip", "joke", "roll", "settimer", "time", "add", "subtract", "multiply", "divide", "googlesearch", "imagesearch"]
 
 #other variables
 wakeupreply = ("Hello, What would you like me to do?", "Yes?", "How can I help?")
