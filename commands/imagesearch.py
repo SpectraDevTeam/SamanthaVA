@@ -1,5 +1,5 @@
 import webbrowser
-import assistantvoice
+from commands import assistantvoice
 
 def command_matches_input(input):
     if 'images' and 'google' in input:

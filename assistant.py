@@ -2,7 +2,7 @@ import random
 import importlib
 from commands import assistantvoice
 
-commandslist = ["endprogram", "flip", "joke", "roll", "settimer", "time", "add", "subtract", "multiply", "divide", "googlesearch", "imagesearch"]
+commandslist = ["endprogram", "flip", "joke", "roll", "settimer", "time", "add", "subtract", "multiply", "divide", "searchgoogle", "imagesearch", "openapp"]
 
 #other variables
 wakeupreply = ("Hello, What would you like me to do?", "Yes?", "How can I help?")
@@ -42,3 +42,16 @@ while True:
             module = importlib.import_module(f'commands.{cmd}')
             if module.command_matches_input(command):
                 module.execute(command)
+        else:
+            assistantvoice.speak("I'm sorry, I don't understand that command")
+
+    #if wakeup word not heard
+    else:
+        command = voiceortext("Command")
+        for cmd in commandslist:
+            module = importlib.import_module(f'commands.{cmd}')
+            if module.command_matches_input(command):
+                module.execute(command)
+                break
+        else:
+            assistantvoice.speak("I'm sorry, I don't understand that command")

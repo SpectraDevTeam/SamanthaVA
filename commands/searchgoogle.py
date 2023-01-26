@@ -1,7 +1,7 @@
 import webbrowser
 import requests
 from googlesearch import search
-import assistantvoice
+from commands import assistantvoice
 
 tld = ''
 
@@ -21,17 +21,8 @@ def execute(input):
 
     url = f"https://www.google.com/search?q={new_input}"
 
-    
-
-    # Write the URL's to a .txt file
-    with open('googlesearch.txt', 'w') as f:
-        for url in search(new_input, tld="co.in", num=10, stop=10, pause=2):
-            f.write(url + '\n')
-
-    f.close()
-
 
     # Open the file in a browser
-    webbrowser.open_new_tab("file:///Users/spectrathefox/Desktop/Repos/SamanthaVA/googlesearch.txt")
+    webbrowser.open_new_tab(url)
     assistantvoice.speak(f"Here are ten Results on google for {new_input}")
 
