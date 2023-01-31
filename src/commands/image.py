@@ -17,5 +17,3 @@ def execute(input):
 
     webbrowser.open("https://www.google.com/search?tbm=isch&q=" + new_input)
     assistantvoice.speak(f"Here are the Results on google images for {new_input}")
-
-execute('search google images for cookies')

@@ -1,6 +1,6 @@
 import subprocess
 import os
-import assistantvoice
+from commands import assistantvoice
 
 def command_matches_input(input):
     if 'app' in input:

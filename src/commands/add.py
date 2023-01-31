@@ -9,9 +9,9 @@ def command_matches_input(input):
     else:
         return False
 
-def execute(input):
+def execute(numbers):
     result = 0
-    for match in re.finditer(r'\d+', input):
-        result += int(match.group(0))
+    for num in numbers:
+        result += int(num)
     
     assistantvoice.speak(f"The Answer is {result}")

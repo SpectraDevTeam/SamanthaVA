@@ -5,7 +5,9 @@ timeamount = ["minute", 'hour', 'second']
 hours = ''
 
 def command_matches_input(input):
-    if 'time' in input and "timer" not in input:
+    if 'timer' in input:
+        return False
+    elif 'time' in input:
         return True
     else:
         return False

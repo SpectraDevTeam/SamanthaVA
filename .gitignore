@@ -1,0 +1,16 @@
+#Folders
+.DS_Store
+.vscode
+.awsconfig
+__pycache__
+src/commands/__pycache__
+src/commands/.DS_Store
+src/.pytest_cache
+src/.DS_Store
+src/.vscode
+src/.awsconfig
+devsrc
+.pytest_cache
+.DS_Store
+.vscode
+.awsconfig
