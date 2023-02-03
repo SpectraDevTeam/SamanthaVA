@@ -5,7 +5,7 @@ All of the Samantha code for her Voice Assistant! A fully functional (Kind of, S
 
 ## Installation
 ***
-Download with ```git clone https://github.com/SpectraDevTeam/SamanthaVA``` in the folder where you would like to have her. Install dependencies with ```pip install -r requirements.txt``` in the main folder (There has been problems with requirement installation, Requirements are as follows: google, playsound, pyttsx3, requests, speechrecognition, and textblob. I would suggest using [Anaconda](https://www.anaconda.com/products/distribution "Anaconda Home") for the installation and running of the program)
+Download with ```git clone https://github.com/SpectraDevTeam/SamanthaVA``` in the folder where you would like to have her. Install dependencies with ```pip install -r requirements.txt``` in the main folder (There has been problems with requirement installation, Requirements are as follows: google, pygame, playsound, pyttsx3, requests, speechrecognition, and textblob. I would suggest using [Anaconda](https://www.anaconda.com/products/distribution "Anaconda Home") for the installation and running of the program)
 <br /><br />
 Before running her you will want to use ```python3 checkvoices.py``` to check what voices are on your system. As this is still in the testing phase the Final voice is not yet availible. you will want to select one of the voices from the ones generated and it will edit voice.txt to run the voice you select.
 
